@@ -1,0 +1,74 @@
+/**
+ * For more details on how to configure Wrangler, refer to:
+ * https://developers.cloudflare.com/workers/wrangler/configuration/
+ */
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "jekyll-commerce-api",
+	"main": "src/index.js",
+	"compatibility_date": "2026-09-07",
+	"observability": {
+		"enabled": true
+	},
+	"upload_source_maps": true,
+	"vars": {
+		"APP_ENV": "production",
+		"PAYMENT_ENV": "production",
+		"EMAIL_PROVIDER": "resend",
+		"STORE_NAME": "MTH Template Commerce",
+		"STORE_EMAIL_FROM": "MTH Commerce <onboarding@resend.dev>",
+		"STORE_ADMIN_EMAIL": "christopherhewlett86@gmail.com",
+		"FULFILLMENT_PROVIDER": "printify",
+		"STORE_CURRENCY": "USD",
+		"STORE_MAX_QUANTITY": "10",
+		"STOREFRONT_ORIGIN": "https://chew-max.github.io",
+		"STORE_SUCCESS_URL": "https://chew-max.github.io/jekyll-commerce-starter/checkout/success/",
+		"STORE_FAILED_URL": "https://chew-max.github.io/jekyll-commerce-starter/checkout/failed/",
+		"PAYMENT_RETURN_URL": "https://jekyll-commerce-api.mth-commerce.workers.dev/api/payment-return",
+		"STOREFRONT_BASE_PATH": "/jekyll-commerce-starter"
+	},
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "jekyll-commerce-orders",
+			"database_id": "8c47161c-22ff-48d7-82bb-193eb1a79ae0"
+		}
+	],
+	"triggers": {
+		"crons": [
+			"*/30 * * * *"
+		]
+	},
+	"env": {
+		"sandbox": {
+			"name": "jekyll-commerce-api-sandbox",
+			"vars": {
+				"APP_ENV": "sandbox",
+				"PAYMENT_ENV": "sandbox",
+				"EMAIL_PROVIDER": "resend",
+				"STORE_NAME": "MTH Template Commerce Sandbox",
+				"STORE_EMAIL_FROM": "MTH Commerce <onboarding@resend.dev>",
+				"STORE_ADMIN_EMAIL": "christopherhewlett86@gmail.com",
+				"FULFILLMENT_PROVIDER": "printify",
+				"PRINTIFY_SHOP_ID": "28868476",
+				"STORE_CURRENCY": "USD",
+				"STORE_MAX_QUANTITY": "10",
+				"STOREFRONT_ORIGIN": "https://chew-max.github.io",
+				"STORE_SUCCESS_URL": "https://chew-max.github.io/jekyll-commerce-starter/checkout/success/",
+				"STORE_FAILED_URL": "https://chew-max.github.io/jekyll-commerce-starter/checkout/failed/",
+				"PAYMENT_RETURN_URL": "https://jekyll-commerce-api-sandbox.mth-commerce.workers.dev/api/payment-return",
+				"STOREFRONT_BASE_PATH": "/jekyll-commerce-starter"
+			},
+			"d1_databases": [
+			{
+				"binding": "DB",
+				"database_name": "jekyll-commerce-orders-sandbox",
+				"database_id": "7814ad54-da1b-42ed-9187-dd4e0cd32312"
+			}
+			],
+			"triggers": {
+			  "crons": []
+			}
+		}
+	}
+}

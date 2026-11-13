@@ -1,0 +1,13 @@
+ALTER TABLE orders
+ADD COLUMN merchandise_subtotal INTEGER;
+
+ALTER TABLE orders
+ADD COLUMN shipping_amount INTEGER
+NOT NULL DEFAULT 0;
+
+ALTER TABLE orders
+ADD COLUMN tax_amount INTEGER
+NOT NULL DEFAULT 0;
+
+ALTER TABLE orders
+ADD COLUMN total INTEGER;

@@ -1,0 +1,23 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+
+  "name": "jekyll-commerce-shipping-test",
+
+  "main": "tools/test-shipping-email.js",
+
+  "compatibility_date": "2026-09-07",
+
+  "vars": {
+    "EMAIL_PROVIDER": "resend",
+    "STORE_NAME": "Jekyll Commerce",
+    "STORE_EMAIL_FROM": "Jekyll Commerce <onboarding@resend.dev>"
+  },
+
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "jekyll-commerce-orders",
+      "database_id": "8c47161c-22ff-48d7-82bb-193eb1a79ae0"
+    }
+  ]
+}
