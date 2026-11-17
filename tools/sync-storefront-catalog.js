@@ -9,7 +9,7 @@ const frontendRoot =
   path.resolve(
     backendRoot,
     process.env.STOREFRONT_REPO_PATH ||
-      "../jekyll-commerce-starter"
+      "../cristoforo-store"
   );
 
 const generatedCatalog =
