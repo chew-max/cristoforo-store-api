@@ -21,11 +21,11 @@
 		"FULFILLMENT_PROVIDER": "printify",
 		"STORE_CURRENCY": "USD",
 		"STORE_MAX_QUANTITY": "10",
-		"STOREFRONT_ORIGIN": "https://chew-max.github.io",
-		"STORE_SUCCESS_URL": "https://chew-max.github.io/jekyll-commerce-starter/checkout/success/",
-		"STORE_FAILED_URL": "https://chew-max.github.io/jekyll-commerce-starter/checkout/failed/",
-		"PAYMENT_RETURN_URL": "https://jekyll-commerce-api.mth-commerce.workers.dev/api/payment-return",
-		"STOREFRONT_BASE_PATH": "/cristoforo-store"
+		"STOREFRONT_ORIGIN" : "https://houseofcristoforo.mthpinnacle.store",
+		"STORE_SUCCESS_URL" : "https://houseofcristoforo.mthpinnacle.store/checkout/success/",
+		"STORE_FAILED_URL"  : "https://houseofcristoforo.mthpinnacle.store/checkout/failed/",
+		"PAYMENT_RETURN_URL": "https://cristoforo-commerce-api.mth-commerce.workers.dev/api/payment-return",
+		"STOREFRONT_BASE_PATH": ""
 	},
 	"d1_databases": [
 		{
@@ -52,11 +52,11 @@
 				"FULFILLMENT_PROVIDER": "printify",
 				"STORE_CURRENCY": "USD",
 				"STORE_MAX_QUANTITY": "10",
-				"STOREFRONT_ORIGIN": "https://chew-max.github.io",
-				"STORE_SUCCESS_URL": "https://chew-max.github.io/jekyll-commerce-starter/checkout/success/",
-				"STORE_FAILED_URL": "https://chew-max.github.io/jekyll-commerce-starter/checkout/failed/",
-				"PAYMENT_RETURN_URL": "https://jekyll-commerce-api-sandbox.mth-commerce.workers.dev/api/payment-return",
-				"STOREFRONT_BASE_PATH": "/cristoforo-store"
+				"STOREFRONT_ORIGIN" : "https://houseofcristoforo.mthpinnacle.store",
+				"STORE_SUCCESS_URL" : "https://houseofcristoforo.mthpinnacle.store/checkout/success/",
+				"STORE_FAILED_URL"  : "https://houseofcristoforo.mthpinnacle.store/checkout/failed/",
+				"PAYMENT_RETURN_URL": "https://cristoforo-store-api-sandbox.mth-commerce.workers.dev/api/payment-return",
+				"STOREFRONT_BASE_PATH": ""
 			},
 			"d1_databases": [
 			{
