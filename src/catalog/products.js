@@ -1,110 +1,71 @@
 export const catalogProducts = [
-  {
+ {
   "id": "SCT-001",
   "name": "S.CRISTOFORO - FAITH & STRENTH DISTRESSED",
   "variants": [
     {
-      "sku": "SCT-001-WHITE-S",
+      "sku": "SCT-001-BLACK-M",
       "price": 4999,
       "options": {
-        "size": "S",
-        "color": "White"
-      },
-      "fulfillment": {
-        "provider": "printify",
-        "productId": "6afb8734754cb1108409fe24",
-        "variantId": 12102
-      }
-    },
-    {
-      "sku": "SCT-001-WHITE-XL",
-      "price": 4999,
-      "options": {
-        "color": "White",
-        "size": "XL"
-      },
-      "fulfillment": {
-        "provider": "printify",
-        "productId": "6afb8734754cb1108409fe24",
-        "variantId": 12103
-      }
-    },
-    {
-      "sku": "SCT-001-WHITE-L",
-      "price": 4999,
-      "options": {
-        "color": "White",
-        "size": "L"
-      },
-      "fulfillment": {
-        "provider": "printify",
-        "productId": "6afb8734754cb1108409fe24",
-        "variantId": 12100
-      }
-    },
-    {
-      "sku": "SCT-001-WHITE-M",
-      "price": 4999,
-      "options": {
-        "color": "White",
+        "color": "Black",
         "size": "M"
       },
       "fulfillment": {
         "provider": "printify",
         "productId": "6afb8734754cb1108409fe24",
-        "variantId": 12101
+        "variantId": 12125
       }
     },
     {
-      "sku": "SCT-001-WHITE-2XL",
+      "sku": "SCT-001-BLACK-S",
       "price": 4999,
       "options": {
-        "size": "2XL",
-        "color": "White"
+        "size": "S",
+        "color": "Black"
       },
       "fulfillment": {
         "provider": "printify",
         "productId": "6afb8734754cb1108409fe24",
-        "variantId": 12104
+        "variantId": 12126
       }
     },
     {
-      "sku": "SCT-001-WHITE-3XL",
+      "sku": "SCT-001-BLACK-L",
       "price": 4999,
       "options": {
-        "color": "White",
-        "size": "3XL"
+        "color": "Black",
+        "size": "L"
       },
       "fulfillment": {
         "provider": "printify",
         "productId": "6afb8734754cb1108409fe24",
-        "variantId": 12105
+        "variantId": 12124
       }
     },
     {
-      "sku": "SCT-001-WHITE-4XL",
+      "sku": "SCT-001-BLACK-XL",
       "price": 4999,
       "options": {
-        "size": "4XL",
-        "color": "White"
+        "color": "Black",
+        "size": "XL"
       },
       "fulfillment": {
         "provider": "printify",
         "productId": "6afb8734754cb1108409fe24",
-        "variantId": 24031
+        "variantId": 12127
       }
     },
     {
-      "sku": "SCT-001-WHITE-5XL",
+      "sku": "SCT-001-BLACK-2XL",
       "price": 4999,
       "options": {
-        "size": "5XL",
-        "color": "White"
+        "color": "Black",
+        "size": "2XL"
       },
       "fulfillment": {
         "provider": "printify",
         "productId": "6afb8734754cb1108409fe24",
-        "variantId": 24164
+        "variantId": 12128
       }
     }
   ]
