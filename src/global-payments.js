@@ -682,7 +682,7 @@ export async function createHostedPaymentPage(
 
 
 			body: JSON.stringify({
-			  account_name: "transaction_processing_pbl",
+			  account_name: "transaction_processing",
 			  type: "payment",
 			  usage_mode: "SINGLE",
 			  usage_limit: "1",
